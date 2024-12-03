@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  table,
+  thead,
+  th,
+  tr,
+  tbody,
+  td {
+    border: 1px solid white;
+    padding: 10px
+  }
+
+  table {
+    border-collapse: collapse
+  }
+
+  blockquote {
+    padding: 0 20px;
+    margin: 0;
+    border-left: 5px solid #3d444d;
+    color: #9198a1;
+  }
+
+  a {
+    color: #4493f8
+  }
+
+  code {
+    background: #1e2530;
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
