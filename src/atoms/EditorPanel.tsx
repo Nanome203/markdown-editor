@@ -7,7 +7,7 @@ interface Props {
 
 const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
   return (
-    <div className="basis-1/2">
+    <div className="h-full basis-1/2">
       <h1 className="pl-5 text-center text-5xl italic">Editor</h1>
 
       <Editor
