@@ -20,12 +20,10 @@ const customSchema = {
   },
 };
 const PreviewPanel: React.FC<Props> = ({ code }) => {
-  console.log(defaultSchema.attributes);
-  console.log({ ...defaultSchema, attributes: { "*": ["className"] } });
   return (
-    <div className="basis-1/2">
+    <div className="basis-1/2 px-5">
       <h1 className="text-center text-5xl italic">Preview</h1>
-      <div className="scrollbar scrollbar-track-transparent scrollbar-thumb-white h-[88vh] overflow-scroll scroll-smooth pl-5">
+      <div className="h-[88vh] overflow-scroll scroll-smooth scrollbar scrollbar-track-transparent scrollbar-thumb-white">
         <Markdown
           remarkPlugins={[remarkGfm, remarkBreaks]}
           rehypePlugins={[

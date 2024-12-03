@@ -5,7 +5,7 @@ import PreviewPanel from "./atoms/PreviewPanel";
 function App() {
   const [code, setCode] = useState<string | undefined>("");
   return (
-    <div className="fixed left-0 top-0 flex size-full bg-[#0d1117] text-white">
+    <div className="fixed left-0 top-0 flex size-full bg-[#1E1E1E] text-white">
       <EditorPanel code={code} onChange={setCode} />
       <PreviewPanel code={code} />
     </div>
