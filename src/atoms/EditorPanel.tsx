@@ -8,7 +8,7 @@ interface Props {
 const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
   const [fontSize, setFontSize] = useState(15);
   return (
-    <div className="basis-1/2">
+    <div className="basis-1/2 pr-5">
       <h1 className="text-center text-5xl italic">Editor</h1>
       <div className="m-5 flex items-center justify-center gap-5">
         <button

@@ -25,7 +25,7 @@ const PreviewPanel: React.FC<Props> = ({ code }) => {
   return (
     <div className="basis-1/2">
       <h1 className="text-center text-5xl italic">Preview</h1>
-      <div className="scrollbar scrollbar-track-transparent scrollbar-thumb-white h-[88vh] overflow-y-scroll scroll-smooth px-20">
+      <div className="scrollbar scrollbar-track-transparent scrollbar-thumb-white h-[88vh] overflow-scroll scroll-smooth pl-5">
         <Markdown
           remarkPlugins={[remarkGfm, remarkBreaks]}
           rehypePlugins={[
