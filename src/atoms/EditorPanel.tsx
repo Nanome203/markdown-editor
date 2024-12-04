@@ -1,6 +1,8 @@
 import { Editor } from "@monaco-editor/react";
 import * as monaco from "monaco-editor";
 import React, { useRef, useState } from "react";
+import FileSelector from "./FileSelector";
+import SaveFileButton from "./SaveFileButton";
 interface Props {
   code?: string;
   onChange: React.Dispatch<React.SetStateAction<string | undefined>>;
@@ -23,7 +25,7 @@ const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
   };
   return (
     <div className="basis-1/2 px-5">
-      <h1 className="text-center text-5xl italic">Editor</h1>
+      <h1 className="text-center text-5xl italic">Markdown Editor</h1>
       <div className="mb-5 flex items-center justify-center gap-5 font-['Roboto']">
         <button
           onClick={() => {
@@ -48,6 +50,8 @@ const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
             className="ml-2 w-fit rounded-xl border-none border-white bg-white p-3 outline-none"
           />
         </div>
+        <FileSelector onSelected={onChange} />
+        <SaveFileButton code={code} />
       </div>
       <Editor
         height="80%"
