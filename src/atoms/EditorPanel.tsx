@@ -22,6 +22,7 @@ const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
       verticalScrollbarSize: 7,
     },
     wordWrap: "on",
+    autoClosingBrackets: "never",
   };
   return (
     <div className="basis-1/2 px-5">
