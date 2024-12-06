@@ -5,7 +5,7 @@ import FileSelector from "./FileSelector";
 import SaveFileButton from "./SaveFileButton";
 interface Props {
   code?: string;
-  onChange: React.Dispatch<React.SetStateAction<string | undefined>>;
+  onChange: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
@@ -63,7 +63,7 @@ const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
           editorRef.current = e;
           e.focus();
         }}
-        onChange={(value) => onChange(value)}
+        onChange={(value) => onChange(value!)}
         options={options}
       />
     </div>

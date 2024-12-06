@@ -2,7 +2,7 @@ import { faMarkdown } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef } from "react";
 interface Props {
-  onSelected: React.Dispatch<React.SetStateAction<string | undefined>>;
+  onSelected: React.Dispatch<React.SetStateAction<string>>;
 }
 const FileSelector: React.FC<Props> = ({ onSelected }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
