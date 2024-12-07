@@ -10,7 +10,7 @@ interface Props {
 
 const EditorPanel: React.FC<Props> = ({ code, onChange }) => {
   const [fontSize, setFontSize] = useState(17);
-  const editorRef = useRef<monaco.editor.IStandaloneCodeEditor>();
+  const editorRef = useRef<monaco.editor.IStandaloneCodeEditor>(null);
   const options: monaco.editor.IStandaloneEditorConstructionOptions = {
     readOnly: false,
     minimap: {
